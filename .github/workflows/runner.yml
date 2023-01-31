@@ -46,7 +46,7 @@ jobs:
 
       -
         name: Build and push dev
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         with:
           context: ./runner
           platforms: linux/amd64
@@ -61,7 +61,7 @@ jobs:
 
       -
         name: Build and push latest
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         with:
           context: ./runner
           platforms: linux/amd64
